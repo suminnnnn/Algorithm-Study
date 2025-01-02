@@ -31,18 +31,18 @@ public class Main {
                 } else if ((arr[i]+arr[j])<target) {
                     i++;
                 } else {
-                    if (i!=target && j!=target){
-                        count++; break;
-                    } else if (i==target){
+                    if (i!=m && j!=m){
+                        count++;
+                        break;
+                    } else if (i==m){
                         i++;
-                    } else if (j==target) {
+                    } else if (j==m) {
                         j--;
                     }
                 }
             }
         
         }
-
         System.out.println(count);
         br.close();
     }

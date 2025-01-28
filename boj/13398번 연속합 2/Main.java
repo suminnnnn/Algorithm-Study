@@ -30,7 +30,7 @@ public class Main {
             R[i] = Math.max(A[i], R[i+1]+A[i]);
         }
 
-        for(int i=1; i<n; i++) {
+        for(int i=1; i<n-1; i++) {
             int temp = L[i-1] + R[i+1];
             result = Math.max(result, temp);
         }

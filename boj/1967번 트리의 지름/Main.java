@@ -43,7 +43,7 @@ class Main {
         A = new ArrayList[N+1];
         visited = new boolean[N+1];
 
-        for(int i = 1; i<=N; i++){
+        for(int i = 0; i<=N; i++){
             A[i] = new ArrayList<Node>();
         }
 
@@ -61,7 +61,7 @@ class Main {
         DFS(1,0);
 
         Arrays.fill(visited, false);
-        maxDist = 0
+        maxDist = 0;
         DFS(farthestNode, 0);
 
         System.out.println(maxDist);
